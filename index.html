@@ -7,17 +7,14 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
+            padding: 20px;
             font-family: 'Arial', sans-serif;
             background: linear-gradient(45deg, #ff69b4, #ff1493, #dc143c); /* Pink to red gradient */
             color: white;
             text-align: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: auto; /* Changed from hidden to auto for scrolling */
-            position: relative;
+            min-height: 100vh;
+            box-sizing: border-box;
+            overflow-y: auto; /* Ensure vertical scrolling if needed */
         }
 
         /* Floating hearts background */
@@ -46,6 +43,7 @@
             background: rgba(255, 255, 255, 0.1); /* Semi-transparent overlay */
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            margin: 0 auto; /* Center horizontally */
             position: relative;
             z-index: 1;
         }
@@ -60,6 +58,7 @@
         p {
             font-size: 1.5em;
             margin-bottom: 20px;
+            word-wrap: break-word; /* Ensure long text wraps */
         }
 
         .teddy {
@@ -73,6 +72,7 @@
             justify-content: center;
             gap: 20px;
             margin-top: 20px;
+            flex-wrap: wrap; /* Wrap on small screens */
         }
 
         .photos img {
@@ -136,13 +136,12 @@
     <div class="heart">💖</div>
 
     <div class="container">
-        <h1></h1>
-        <h2>Happy New Year Bbbyyy !</h2>
+        <h1>Happy New Year Bby!</h1>
         <p>As this year comes to an end and a new one begins, I just want to pause and say thank you for being in my life. You came into my world and turned everything brighter, calmer, and happier. Because of you, my days feel lighter and my heart feels full.
 Thank you for standing by me, supporting me, understanding me, and loving me the way you do. With you, even ordinary moments feel special. I’ve grown happier and stronger since you came into my life, and that’s all because of you.
 As we step into the New Year, my only wish is to keep walking beside you, creating memories, facing everything together, and loving you a little more every day.
 Happy New Year, my love ❤️
-I love you so much, always and forever.May this year bring you joy, love, and endless adventures. I love you! 🎉</p>
+I love you so much, always and forever.May this year bring you joy, love, and endless adventures.🎉</p>
         <div class="teddy">🧸</div>
         <div class="photos">
             <img src="your-photo.jpg" alt="Your Photo">
@@ -160,6 +159,3 @@ I love you so much, always and forever.May this year bring you joy, love, and en
     </div>
 </body>
 </html>
-
-
-
